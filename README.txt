@@ -6,15 +6,16 @@
 - Change the hostname to your computername in the function upgradewindows
   + $hostname = yourcomputername or IP address (ex: comp1234)
 
-3. Because of upload limit, I cannot upload file ISO windows into the folder source\. Thus, please download and copy-paste file ISO windows you want into the path directory here source\windows10.iso.
+3. Because of the uploading limit, I cannot upload file ISO windows into the folder source\. Thus, please download and copy-paste file ISO windows you want into the path directory here source\windows10.iso. (change name of ISO file to windows10.iso)
 
 4. Run file RunasAdministrator.bat to upgrade.
  
-5. After everything goes smoothly. Run "checkupdate" function to check the new version.
+5. After everything goes smoothly. Run "checkupdate" function to check the version on each computer in csv file.
+ - Add # to the headline to disable. For ex:
 
 *Note:
  - "Powershell is not recognized as an internal or external command operable ..". Please add %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\ to the Path enviroment.
- - Windows will upgrade to the higher or equal versio 1809
+ - Windows will upgrade to the higher or equal version 1809
  - File ISO in source is the windows 10 version 1909.
 
 ---------------------------------------------------------------------------------------
