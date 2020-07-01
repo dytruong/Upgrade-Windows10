@@ -12,5 +12,9 @@
 
 *Note:
  - "Powershell is not recognized as an internal or external command operable ..". Please add %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\ to the Path enviroment.
-
+ - Windows will upgrade to the higher or equal versio 1809
+ - File ISO in source is the windows 10 version 1909. 
 5. After everything goes smoothly. Run "checkupdate" function to check the new version.
+
+---------------------------------------------------------------------------------------
+Please contact me: tranduytruong0311@gmail.com if you have any issues related.
