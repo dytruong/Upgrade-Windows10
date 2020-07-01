@@ -1,4 +1,4 @@
-Write-Warning "Please make sure you have followed exactly the guideline!"
+Write-Warning "Please make sure you have followed exactly the README file!"
 $ScriptDir = Split-Path $script:MyInvocation.MyCommand.Path;
 $computer = Import-csv -Path "${ScriptDir}\source\computername.csv" -Header computername
 #Get credential
