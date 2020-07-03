@@ -63,7 +63,7 @@ function upgradewindows {
             New-PSDrive -Name "L" -PSProvider FileSystem -Root \\$hostname\upgrade -Persist -Credential $cred;
             #check windows version
             $getwdversion = (Get-ComputerInfo).WindowsVersion
-            if ("$getwdversion" -gt 1808){
+            if ("$getwdversion" -gt 1809){                              #change windows version
                 write-host "$ho has windows version $getwdversion. There is no need to upgrade. EXIT now :D" -ForegroundColor Green;
                 write-host "---------------------------------------------------------------------------";
                 exit;
@@ -90,7 +90,7 @@ function upgradewindows {
                     $checkpath = Test-Path C:\wd1903;
                     if ($checkpath -eq "True")
                         {
-                            $source = "C:\wd1903\setup.exe /auto upgrade /noreboot /migratedrivers all /copylogs \\$hostname\upgrade\log /quiet";
+                            $source = "C:\wd1903\setup.exe /auto upgrade /noreboot /migratedrivers all /copylogs \\$hostname\upgrade\log /quiet"; #remove /noreboot if you want to user's computer force reboot after installing done.
                             & cmd.exe /c $source;
                             $getdate2 = get-date -Format HH:mm:ss;
                             Write-Host "The updating process complete at $getdate2 ... It will be done in 30 minutes after restarting.";
