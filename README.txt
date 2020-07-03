@@ -1,4 +1,4 @@
-1. Add the computer name that you want to upgrade into source\computername.csv, you should put it into one column. 
+1. Add multiple computernames (hostname) that you want to upgrade into source\computername.csv, you should put it into one column. 
 
 2. Update your username and password to file updradew10-ver10.ps1 as below:
 - Change the username and password in the HEADER and in the function upgradewindows
