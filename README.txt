@@ -15,9 +15,9 @@
 
 *Note:
  - "Powershell is not recognized as an internal or external command operable ..". Please add %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\ to the Path environment.
- - Windows will upgrade to the higher or equal version 1809
- - There are two options: 
-      + /noreboot - it will not restart the computer client when installing done. (It enables default)
+ - Windows will upgrade to higher version 1803.
+ - In the line $source = "C:\wd1903\setup.exe /auto upgrade /noreboot /migratedrivers all /copylogs \\$hostcomputer\upgrade\log /quiet":
+      + Add /noreboot - if you don't want to restart the client computer when installing done. (It enables default)
       + Without /noreboot option, the computer client will be force restart instantly after installing done. 
  - For more information, please refer the article here - https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options
 
